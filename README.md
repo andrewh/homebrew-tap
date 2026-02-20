@@ -8,7 +8,7 @@ Homebrew tap for tools by [andrewh](https://github.com/andrewh).
 brew tap andrewh/tap
 ```
 
-### accord
+### [accord](https://github.com/andrewh/accord)
 
 Consumer-driven contract testing using plain YAML files.
 
@@ -16,7 +16,7 @@ Consumer-driven contract testing using plain YAML files.
 brew install andrewh/tap/accord
 ```
 
-### motel
+### [motel](https://github.com/andrewh/motel)
 
 Synthetic telemetry generator for OpenTelemetry.
 
