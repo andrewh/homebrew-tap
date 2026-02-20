@@ -6,7 +6,7 @@ class Motel < Formula
   desc "Synthetic telemetry generator for OpenTelemetry"
   homepage "https://github.com/andrewh/motel"
   version "0.2.0"
-  license "MIT"
+  license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
