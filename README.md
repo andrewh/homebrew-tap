@@ -1,8 +1,24 @@
 # homebrew-tap
 
-Homebrew tap for [motel](https://github.com/andrewh/motel) — a synthetic telemetry generator for OpenTelemetry.
+Homebrew tap for tools by [andrewh](https://github.com/andrewh).
 
 ## Install
+
+```sh
+brew tap andrewh/tap
+```
+
+### accord
+
+Consumer-driven contract testing using plain YAML files.
+
+```sh
+brew install andrewh/tap/accord
+```
+
+### motel
+
+Synthetic telemetry generator for OpenTelemetry.
 
 ```sh
 brew install andrewh/tap/motel
@@ -11,6 +27,6 @@ brew install andrewh/tap/motel
 ## Update
 
 ```sh
+brew upgrade accord
 brew upgrade motel
 ```
-
