@@ -5,21 +5,21 @@
 class Accord < Formula
   desc "Consumer-driven contract testing using plain YAML files"
   homepage "https://github.com/andrewh/accord"
-  version "0.2.0"
+  version "0.2.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/andrewh/accord/releases/download/v0.2.0/accord_0.2.0_darwin_amd64.tar.gz"
-      sha256 "07b0e930ea61374c2ca0d9ef4fea1b79fb6be4ccb6f79aac0dff67e8c5494b0b"
+      url "https://github.com/andrewh/accord/releases/download/v0.2.1/accord_0.2.1_darwin_amd64.tar.gz"
+      sha256 "663ff30b13eba15514475be4f982ddaea634fd2a186f50949f35f3f1baa9a7d8"
 
       def install
         bin.install "accord"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/andrewh/accord/releases/download/v0.2.0/accord_0.2.0_darwin_arm64.tar.gz"
-      sha256 "2706a6c2f5e675ccd76ee71cf0b7a2d7850c4c53a7ab2e0110719ae3e6356d0a"
+      url "https://github.com/andrewh/accord/releases/download/v0.2.1/accord_0.2.1_darwin_arm64.tar.gz"
+      sha256 "204bf11c87951a2c8c3c0ef139ad7e27eb1f8cba4b60e4433f2d05cf1ca6e35c"
 
       def install
         bin.install "accord"
@@ -29,15 +29,15 @@ class Accord < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/andrewh/accord/releases/download/v0.2.0/accord_0.2.0_linux_amd64.tar.gz"
-      sha256 "6d081dfb5de1dddbcf61cf42e1443a5f6d0f29b6945103711c14a420cfeebd78"
+      url "https://github.com/andrewh/accord/releases/download/v0.2.1/accord_0.2.1_linux_amd64.tar.gz"
+      sha256 "f136e82002a5a2d2215e51b7857b01dcafc87a5e37ad4910866321df08fc61d1"
       def install
         bin.install "accord"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/andrewh/accord/releases/download/v0.2.0/accord_0.2.0_linux_arm64.tar.gz"
-      sha256 "2e2ddd75598b1eae7924033f149a3527ea0eab652974a84518fb7ed97ed3cd69"
+      url "https://github.com/andrewh/accord/releases/download/v0.2.1/accord_0.2.1_linux_arm64.tar.gz"
+      sha256 "e085015f4179f729738199393c1efc1ee70191173a3c2e024dfb3ac752536db9"
       def install
         bin.install "accord"
       end
