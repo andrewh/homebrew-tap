@@ -5,21 +5,21 @@
 class Motel < Formula
   desc "Synthetic telemetry generator for OpenTelemetry"
   homepage "https://github.com/andrewh/motel"
-  version "0.2.0"
+  version "0.2.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/andrewh/motel/releases/download/v0.2.0/motel_0.2.0_darwin_amd64.tar.gz"
-      sha256 "346c3275f5b124a17ca0678a791af7ae17bb6199821712f25a5241c41a7a6c37"
+      url "https://github.com/andrewh/motel/releases/download/v0.2.1/motel_0.2.1_darwin_amd64.tar.gz"
+      sha256 "609f38c12bd2ec8b106b16be1294ec26aafff521f150203f59d51c08328c4a72"
 
       def install
         bin.install "motel"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/andrewh/motel/releases/download/v0.2.0/motel_0.2.0_darwin_arm64.tar.gz"
-      sha256 "060a0d271ea6e0e54823bd4af670a5848cbe17e8568fd0be9ffe490375c8c11b"
+      url "https://github.com/andrewh/motel/releases/download/v0.2.1/motel_0.2.1_darwin_arm64.tar.gz"
+      sha256 "042aa0bbd71b32090bca47043e0821f6da5c76d299bae273fcfbf823121f386c"
 
       def install
         bin.install "motel"
@@ -29,15 +29,15 @@ class Motel < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/andrewh/motel/releases/download/v0.2.0/motel_0.2.0_linux_amd64.tar.gz"
-      sha256 "6ffd162f5bb45d3c3ccb52dfee1f1842b27def2ed7bec2e5af117a9eab214113"
+      url "https://github.com/andrewh/motel/releases/download/v0.2.1/motel_0.2.1_linux_amd64.tar.gz"
+      sha256 "afb165dfe5eb98ac22ea789c6ca79901e2ad5ae40b8fd7ed3dba4fa727f13c68"
       def install
         bin.install "motel"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/andrewh/motel/releases/download/v0.2.0/motel_0.2.0_linux_arm64.tar.gz"
-      sha256 "ad63d3f6f97a52e33776fbbb2c3cdf9a713a090f4219c8f51c7de0be3b5dcd11"
+      url "https://github.com/andrewh/motel/releases/download/v0.2.1/motel_0.2.1_linux_arm64.tar.gz"
+      sha256 "e67b565068657061cfb603c669666ece99d77a880ef25285da2af521acd15448"
       def install
         bin.install "motel"
       end
