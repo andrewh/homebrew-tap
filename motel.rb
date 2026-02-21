@@ -5,23 +5,23 @@
 class Motel < Formula
   desc "Synthetic telemetry generator for OpenTelemetry"
   homepage "https://github.com/andrewh/motel"
-  version "0.5.0"
+  version "0.5.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/andrewh/motel/releases/download/v0.5.0/motel_0.5.0_darwin_amd64.tar.gz"
-      sha256 "cd8f3d386e2ebfbf86c4fc8e004c8ee662c1b41d8f35844deeb2cae0d489eb8d"
+      url "https://github.com/andrewh/motel/releases/download/v0.5.1/motel_0.5.1_darwin_amd64.tar.gz"
+      sha256 "13cc2720c8394a880b5f5d0da7143e0772ff49381df9cef99406d0c1bd783c6b"
 
-      def install
+      define_method(:install) do
         bin.install "motel"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/andrewh/motel/releases/download/v0.5.0/motel_0.5.0_darwin_arm64.tar.gz"
-      sha256 "78ddf3f4eb89eb768eebb8554fe74b67089b5cf5ebaff2a60e1ac001fd4d98af"
+      url "https://github.com/andrewh/motel/releases/download/v0.5.1/motel_0.5.1_darwin_arm64.tar.gz"
+      sha256 "57f065e188e74c48bdaca07e4cad8c00962c82b7e25a640e28924ba98e63602e"
 
-      def install
+      define_method(:install) do
         bin.install "motel"
       end
     end
@@ -29,16 +29,16 @@ class Motel < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/andrewh/motel/releases/download/v0.5.0/motel_0.5.0_linux_amd64.tar.gz"
-      sha256 "40e083f0b7693138f8e95a3b588ad960462eed30acfe6de1d065dc34549e1271"
-      def install
+      url "https://github.com/andrewh/motel/releases/download/v0.5.1/motel_0.5.1_linux_amd64.tar.gz"
+      sha256 "0b62ed29803ed1d776d89eb79fe86cbb6bdcb630376a9e799fd8baa05ca36784"
+      define_method(:install) do
         bin.install "motel"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/andrewh/motel/releases/download/v0.5.0/motel_0.5.0_linux_arm64.tar.gz"
-      sha256 "0225b6bda48b0ddace8470061b212bb899812f76c01b642a5969b37b6d96d883"
-      def install
+      url "https://github.com/andrewh/motel/releases/download/v0.5.1/motel_0.5.1_linux_arm64.tar.gz"
+      sha256 "e114877c35c778201d4340e34ae1306c00fb469372e975ce0f7271f7b816dffe"
+      define_method(:install) do
         bin.install "motel"
       end
     end
